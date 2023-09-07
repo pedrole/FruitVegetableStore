@@ -1,0 +1,18 @@
+<mat-grid-list cols="3" gutterSize="16px">
+    <mat-grid-tile *ngFor="let product of products">
+        <mat-card (click)="onCardClick(product.id)">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{product.name}}</mat-card-title>
+
+            </mat-card-header>
+            <img mat-card-image src="assets/images/placeholder.jpg" width="150" height="auto"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <mat-card-subtitle><b>1 {{product.unity}} {{product.price}} €</b></mat-card-subtitle>
+               
+            </mat-card-content>
+            
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

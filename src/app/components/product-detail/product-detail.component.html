@@ -1,0 +1,19 @@
+<div class="container">
+    <mat-card class="detail-card">
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-card-title>{{product?.name}}</mat-card-title>
+                <mat-card-subtitle>1 {{product?.unity}} {{product?.price}} €</mat-card-subtitle>
+                <img mat-card-lg-image src="assets/images/placeholder.jpg">
+                <mat-list>
+                    <mat-list-item><strong>Country of origin</strong></mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>{{product?.country}}</mat-list-item>
+    
+                </mat-list>
+            </mat-card-title-group>
+            
+        </mat-card-header>
+
+    </mat-card>
+</div>
